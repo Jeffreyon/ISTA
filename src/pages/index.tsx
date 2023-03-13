@@ -201,7 +201,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className=" lg:col-start-7 lg:col-end-13">
-                                <div className="p-6 border bg-white rounded-box ">
+                                <div className="p-6 border bg-white rounded-box flex flex-col sm:flex-row gap-5">
                                     <div className="w-14 h-14 inline-flex items-center justify-center rounded-full bg-primary-50 border border-purple-100 flex-shrink-0">
                                         <svg
                                             width="32"
