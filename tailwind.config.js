@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 const colors = {
+    
     primary: {
         50: "#FFFAFF",
         100: "#FFAAF2",
@@ -11,6 +12,11 @@ const colors = {
         600: "#7D2870",
         700: "#69145C",
         800: "#550048",
+        // black shades
+        900: "#646464",
+        930: "#282828",
+        // about bg
+        1000: "#F5F5F5"
     },
     secondary: {
         50: "#D7FFFF",
