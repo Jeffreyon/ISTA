@@ -1,19 +1,19 @@
-import Head from 'next/head'
-import BlogFeature from '../components/BlogFeature'
-import SubjectsFeature from '../components/SubjectsFeature'
-import FAQ from '../components/FAQ'
-import Footer from '../components/Footer'
-import ContactHeader from '@/components/ContactHeader'
-import Navbar from '../components/Navbar'
-import Image from 'next/image'
+import Head from "next/head";
+import BlogFeature from "../components/BlogFeature";
+import SubjectsFeature from "../components/SubjectsFeature";
+import FAQ from "../components/FAQ";
+import Footer from "../components/Footer";
+import ContactHeader from "@/components/ContactHeader";
+import Navbar from "../components/Navbar";
+import Image from "next/image";
 
 // images
-import headerImage from '../../public/images/header-image.png'
-import whoWeAreImage from '../../public/images/who-we-are.png'
-import experiencedBgImage from '../../public/images/experienced-bg.jpeg'
+import headerImage from "../../public/images/header-image.png";
+import whoWeAreImage from "../../public/images/who-we-are.png";
+import experiencedBgImage from "../../public/images/experienced-bg.jpeg";
 
-import star1 from '../../public/images/star1.svg'
-import star2 from '../../public/images/star2.svg'
+import star1 from "../../public/images/star1.svg";
+import star2 from "../../public/images/star2.svg";
 
 export default function Home() {
   return (
@@ -229,5 +229,5 @@ export default function Home() {
         <Footer />
       </main>
     </>
-  )
+  );
 }
