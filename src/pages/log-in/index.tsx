@@ -26,8 +26,14 @@ export default function index() {
 
   // handle the form submission
   const submitHandler = (data: any) => {
-    // TODO: Validate user and log them in
+    // TODO: Check if user exists in db
     console.log(data);
+
+    // If they exist, check if they are verified and log them in
+
+    // if they are not verified, redirect to verification page
+
+    // if they don't exist show an error
   };
 
   return (
