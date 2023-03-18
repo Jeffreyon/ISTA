@@ -38,7 +38,7 @@ export default function Home() {
 
                             <div className="flex justify-center">
                                 <a
-                                    href="/auth/sign-up"
+                                    href="/sign-up"
                                     className="btn btn-lg btn-primary">
                                     Get a Home Tutor
                                 </a>
