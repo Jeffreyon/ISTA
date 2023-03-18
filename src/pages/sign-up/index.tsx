@@ -3,6 +3,7 @@ import type { ReactElement } from "react";
 import AuthLayout from "@/components/AuthLayout";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 import userIcon from "../../../public/icons/user.svg";
 import lockIcon from "../../../public/icons/lock.svg";
@@ -26,10 +27,16 @@ export default function index() {
     formState: { errors },
   } = useForm<FormInputs>();
 
+  const router = useRouter();
+
   // handle the form submission
   const submitHandler = (data: any) => {
-    // TODO: Validate user server side and log them in
+    // TODO: Create a new user and send them a verification email on the server
+    // log for now
     console.log(data);
+
+    // redirect to verification page
+    router.push("/verify");
   };
 
   return (
