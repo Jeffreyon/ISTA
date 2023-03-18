@@ -5,30 +5,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap");
 
 :root {
-    font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .container {
-    @apply max-w-7xl;
-    @apply px-4;
-    @apply mx-auto;
+  @apply max-w-7xl;
+  @apply px-4;
+  @apply mx-auto;
 }
 
 .btn {
-    @apply normal-case;
-    @apply text-lg;
-    @apply font-medium;
-    @apply tracking-wide;
+  @apply normal-case;
+  @apply text-lg;
+  @apply font-medium;
+  @apply tracking-wide;
 }
 
 .btn-primary,
 .btn-secondary {
-    @apply text-white;
+  @apply text-white;
 }
 
 .btn-outline:hover {
-    @apply text-white !important;
+  @apply text-white !important;
 }
 .collapse-arrow .collapse-title::after {
-    @apply w-3 h-3;
+  @apply w-3 h-3;
+}
+
+.input {
+  @apply border border-neutral-300;
 }

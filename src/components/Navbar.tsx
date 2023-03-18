@@ -46,13 +46,13 @@ function Navbar() {
                         })}
                         <li>
                             <a
-                                href="/auth/log-in"
+                                href="/log-in"
                                 className="btn btn-outline btn-primary">
                                 Log in
                             </a>
                         </li>
                         <li>
-                            <a href="/auth/sign-up" className="btn btn-primary">
+                            <a href="/sign-up" className="btn btn-primary">
                                 Get started
                             </a>
                         </li>
@@ -134,14 +134,14 @@ function Navbar() {
                                             })}
                                             <li>
                                                 <a
-                                                    href="/auth/log-in"
+                                                    href="/log-in"
                                                     className="btn btn-outline btn-primary btn-block">
                                                     Log in
                                                 </a>
                                             </li>
                                             <li>
                                                 <a
-                                                    href="/auth/sign-up"
+                                                    href="/sign-up"
                                                     className="btn btn-primary btn-block">
                                                     Get started
                                                 </a>

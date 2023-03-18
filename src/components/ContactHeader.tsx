@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function ContactHeader() {
+  
     return (
         <div className="hero py-32 bg-primary">
             <div className="hero-content text-center">
