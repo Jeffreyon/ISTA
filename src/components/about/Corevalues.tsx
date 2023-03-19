@@ -14,19 +14,19 @@ let core = [
     }, {
 
         title: "Passion",
-        desc: "We strive for excellence in everything we do, from the quality of our tutoring services to the professionalism of our tutors."
+        desc: "We are passionate about education and believe that every student has the potential to succeed."
     }, {
 
         title: "Innovation",
-        desc: "We strive for excellence in everything we do, from the quality of our tutoring services to the professionalism of our tutors."
+        desc: "We embrace innovation and are committed to staying at the forefront of educational technology and teaching methodologies."
     }, {
 
         title: "Impact",
-        desc: "We strive for excellence in everything we do, from the quality of our tutoring services to the professionalism of our tutors."
+        desc: "We believe that education has the power to change lives and make a positive impact on the world. We are dedicated to helping students reach their full potential and make a difference in their communities and beyond."
     }, {
 
         title: "Integrity and Accountability",
-        desc: "We strive for excellence in everything we do, from the quality of our tutoring services to the professionalism of our tutors."
+        desc: " We operate with honesty, transparency, and integrity in all of our interactions with students and families  and We hold ourselves accountable for the success of our students and are committed to continuous improvement and growth."
     },
 
 ]
