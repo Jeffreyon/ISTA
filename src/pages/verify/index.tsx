@@ -9,17 +9,17 @@ import useVerificationCode from "@/lib/useVerificationCode";
 
 export default function index() {
   const modalTrigger = useRef<any>(null);
-  let [code, inputStates, handleChange, handleFocus] = useVerificationCode(6);
+  let [code, inputStates, handleChange, handleKeyDown] = useVerificationCode(6);
 
   let inputElements = inputStates.map((state: any, ii: number) => {
     return (
       <div key={ii}>
         <input
           type="number"
-          value={state.code}
+          value={state.digit}
           className="digit input focus:outline-primary-400 w-full text-3xl font-semibold px-1 text-center placeholder-neutral-300 font-mono"
           onChange={(e) => handleChange(e, ii)}
-          onFocus={(e) => handleFocus(e, ii)}
+          onKeyDown={handleKeyDown}
         />
       </div>
     );
@@ -50,12 +50,16 @@ export default function index() {
           <div className="grid grid-cols-6 gap-3">{inputElements}</div>
 
           <div>
-            <button onClick={handleSubmit} className="btn btn-primary w-full">
+            <button
+              onClick={handleSubmit}
+              className="btn btn-primary w-full disabled:bg-neutral-200"
+              disabled={code == null ?? true}
+            >
               Continue
             </button>
           </div>
           <div>
-            <p className="text-center">
+            <p className="text-center text-base">
               Didn’t receive an email?{" "}
               <a
                 href="#"
