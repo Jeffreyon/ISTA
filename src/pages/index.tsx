@@ -14,6 +14,7 @@ import experiencedBgImage from "../../public/images/experienced-bg.jpeg";
 
 import star1 from "../../public/images/star1.svg";
 import star2 from "../../public/images/star2.svg";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -34,9 +35,9 @@ export default function Home() {
               </h1>
 
               <div className="flex justify-center">
-                <a href="/sign-up" className="btn btn-lg btn-primary">
+                <Link href="/sign-up" className="btn btn-lg btn-primary">
                   Get a Home Tutor
-                </a>
+                </Link>
               </div>
               <Image
                 src={star1}
