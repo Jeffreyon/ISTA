@@ -5,21 +5,28 @@ import Image from "next/image";
 
 import thumbsUpIcon from "../../../public/icons/thumbs-up.svg";
 import Link from "next/link";
+import useVerificationCode from "@/lib/useVerificationCode";
 
 export default function index() {
-  const [code, setCode] = useState("");
   const modalTrigger = useRef<any>(null);
+  let [code, inputStates, handleChange, handleFocus] = useVerificationCode(6);
 
-  const handleChange = (e: any) => {
-    if (e.target.value.length <= 6) setCode(e.target.value);
-    else return;
-  };
+  let inputElements = inputStates.map((state: any, ii: number) => {
+    return (
+      <div key={ii}>
+        <input
+          type="number"
+          value={state.code}
+          className="digit input focus:outline-primary-400 w-full text-3xl font-semibold px-1 text-center placeholder-neutral-300 font-mono"
+          onChange={(e) => handleChange(e, ii)}
+          onFocus={(e) => handleFocus(e, ii)}
+        />
+      </div>
+    );
+  });
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-
-    // Stop taking input at the 6th digit
-    if (code.length !== 6) return;
 
     // TODO: Verify the user on the server, log code for now
     console.log(code);
@@ -40,18 +47,7 @@ export default function index() {
 
       <form className="mt-4">
         <div className="space-y-5">
-          <div>
-            <div>
-              <input
-                type="number"
-                value={code}
-                maxLength={6}
-                placeholder="Enter code here"
-                className="input focus:outline-primary-400 w-full text-3xl font-semibold px-1 text-center placeholder-neutral-300 font-mono"
-                onChange={handleChange}
-              />
-            </div>
-          </div>
+          <div className="grid grid-cols-6 gap-3">{inputElements}</div>
 
           <div>
             <button onClick={handleSubmit} className="btn btn-primary w-full">
