@@ -8,6 +8,10 @@
   font-family: "Noto Sans", sans-serif;
 }
 
+body {
+  @apply text-lg;
+}
+
 .container {
   @apply max-w-7xl;
   @apply px-4;
