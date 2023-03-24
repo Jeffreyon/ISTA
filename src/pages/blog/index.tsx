@@ -1,14 +1,18 @@
+import Maincontent from "@/components/blog/Maincontent";
+import TopBlogPost from "@/components/blog/TopBlogPost";
 import ContactHeader from "@/components/ContactHeader";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import MainLayout from "@/components/layout/MainLayout";
 
 export default function index() {
     return (
         <>
-            <Navbar />
-            {/* Code the remaining parts of blog page here */}
-            <ContactHeader />
-            <Footer />
+
+            <MainLayout>
+                <TopBlogPost />
+                <Maincontent />
+                <ContactHeader />
+            </MainLayout>
+
         </>
     );
 }
